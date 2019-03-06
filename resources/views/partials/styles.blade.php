@@ -19,3 +19,8 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <style type="text/css">
+    .icon > i {
+      margin-left: 3px;
+    }
+  </style>

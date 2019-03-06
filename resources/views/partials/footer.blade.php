@@ -7,8 +7,8 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <h3>NewBiz</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+            <h3> {{"<dev/plus>"}} NG</h3>
+            <p>Devplus NG is digital base establishment in which existance is to provide everyday solution(s) originational workflow and simplify your daily business process .</p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
@@ -17,19 +17,17 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">About us</a></li>
               <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              KM 80, Lagos Ibadan Expr Way, <br>
+              Alafia, Lagos<br>
+              Nigeria <br>
+              <strong>Phone:</strong> +234 810 603 3044<br>
+              <strong>Email:</strong> info@devplus.com.ng<br>
             </p>
 
             <div class="social-links">
@@ -44,7 +42,7 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <p>Get the most recent product updates and tips for you digital business. Subscribe today!</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
@@ -56,12 +54,12 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>DevPlus</strong>. All Rights Reserved
+        &copy; Copyright © 2017-2019. <strong>DevPlus Solutions. </strong>All Rights Reserved
       </div>
-      <div class="credits">
+     {{--  <div class="credits">
         
         Designed by <a href="https://bootstrapmade.com/"></a>
-      </div>
+      </div> --}}
     </div>
   </footer><!-- #footer -->
 
