@@ -146,6 +146,7 @@
       </div>
     </section><!-- #services -->
 
+
   
 
     <!--==========================
@@ -162,21 +163,26 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Web Development</li>
-              <li data-filter=".filter-app">Mobile App</li>
-              <li data-filter=".filter-card">eCommerce</li>
+              @foreach ($portfolios as $portfolio)
+                <li data-filter=".filter-{{$portfolio->app_type}}">{{$portfolio->app_description}}</li>
+                {{-- <li data-filter=".filter-app">Mobile App</li>
+                <li data-filter=".filter-card">eCommerce</li> --}}
+              @endforeach
             </ul>
           </div>
         </div>
 
-        <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="row portfolio-container">
+          @foreach ($portfolios as $portfolio)
+           
+          <div class="col-lg-4 col-md-6 portfolio-item filter-{{$portfolio->app_type}}">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+              <img src="{{imageSiteGrabber($portfolio->link)}}" class="thumbnail img-fluid" alt="">
+              
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
+                <h4><a href="#">{{ $portfolio->app_name }}</a></h4>
+                <p>{{ $portfolio->app_type }}</p>
                 <div>
                   <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
@@ -185,7 +191,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+          @endforeach
+
+          {{-- <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -294,7 +302,7 @@
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
-            </div>
+            </div> --}}
           </div>
 
         </div>
