@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\portfolio;
+// use App\portfolio;
 
 class PortfoliosTableSeeder extends Seeder
 {
@@ -22,7 +22,7 @@ class PortfoliosTableSeeder extends Seeder
         Portfolio::create([
         	'link' => 'http://devdip.com.ng',
         	'app_type' => 'Web',
-        	'app_name' => 'DevDip',
+        	'app_name' => 'DevelopmentevDip',
             'app_description' => 'Web Development'
         ]);
 
