@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-// use App\portfolio;
+use App\portfolio;
 
 class PortfoliosTableSeeder extends Seeder
 {
