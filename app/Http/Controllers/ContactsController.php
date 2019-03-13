@@ -15,6 +15,6 @@ class ContactsController extends Controller
     		'message' => 'required',
     	])
 
-    	return $request;
+    	Notification::route('')
     }
 }
