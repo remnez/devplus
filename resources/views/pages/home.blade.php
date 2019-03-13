@@ -86,7 +86,7 @@
     <!--==========================
       Services Section
     ============================-->
-    <section class="parallax" style="background-image: url({{ url('img/intro-carousel/2.jpg') }});" id="services" class="section-bg">
+    <section class="parallax" style="background-image: url({{ url('public/img/intro-carousel/2.jpg') }});" id="services" class="section-bg">
       <div class="container">
 
         <header class="section-header">
