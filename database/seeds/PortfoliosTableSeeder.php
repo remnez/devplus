@@ -27,7 +27,7 @@ class PortfoliosTableSeeder extends Seeder
         ]);
 
         Portfolio::create([
-        	'link' => 'https://umpirecarport.com.ng',
+        	'link' => 'http://marqueemakers.com.ng',
         	'app_type' => 'App',
         	'app_name' => 'Aulsteel',
             'app_description' => 'Mobile App'

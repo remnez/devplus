@@ -15,8 +15,9 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'PagesController@home');
-Route::post('/', 'PagesController@home');
+Route::get('/', 'PagesController@home')->name('home');
+Route::post('/', 'ContactsController@home')->name('contact.send');
+// Route::post('/', 'PagesController@home');
 
 
 // Route::group(['prefix' => 'admin'], function () {
