@@ -9,29 +9,20 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          {{-- <li><a href="#team">Team</a></li> --}}
-          {{-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> --}}
-          <li><a href="#contact">Contact Us</a></li>
+          @if (\Route::current()->getName() == 'pages.home')  
+            <li class="active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          @else
+            <li class="active"><a href="{{ route('pages.home') }}">Home</a></li>
+            <li><a href="{{ route('pages.home') }}#about">About Us</a></li>
+            <li><a href="{{ route('pages.home') }}#services">Services</a></li>
+            <li><a href="{{ route('pages.home') }}#portfolio">Portfolio</a></li>
+            <li><a href="{{ route('pages.home') }}#contact">Contact Us</a></li>
+          @endif
+
         </ul>
       </nav><!-- .main-nav -->
       
@@ -41,7 +32,7 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro" class="clearfix">
+{{--   <section id="intro" class="clearfix">
     <div class="container">
 
       <div class="intro-img">
@@ -57,4 +48,29 @@
       </div>
 
     </div>
-  </section><!-- #intro -->
+  </section><!-- #intro --> --}}
+
+@if (\Route::current()->getName() == 'pages.home')  
+    <section style="margin-top:80px" id="intro">
+
+      <div class="intro-content">
+        <h2>Make your <span> business ideas</span><br>happen!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
+        </div>
+      </div>
+
+      <div id="intro-carousel" class="owl-carousel" >
+        <div class="item" style="background-image: url({{ asset('img/intro-carousel/1.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('img/intro-carousel/2.jpg') }});">
+          {{-- <h2>We provide<br><span>Digital solutions</span><br>for your business!</h2> --}}
+        </div>
+        <div class="item" style="background-image: url({{ asset('img/intro-carousel/3.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('img/intro-carousel/4.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('img/intro-carousel/5.jpg') }});"></div>
+      </div>
+
+    </section><!-- #intro -->
+  
+  @endif

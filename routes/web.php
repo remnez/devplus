@@ -15,8 +15,9 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'PagesController@home')->name('home');
-Route::post('/', 'ContactsController@home')->name('contact.send');
+Route::get('/', 'PagesController@home')->name('pages.home');
+Route::get('contact', 'PagesController@getContact')->name('pages.contact');
+Route::post('/', 'ContactsController@sendEmail')->name('send');
 // Route::post('/', 'PagesController@home');
 
 

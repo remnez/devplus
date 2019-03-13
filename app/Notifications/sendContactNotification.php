@@ -10,15 +10,15 @@ use Illuminate\Notifications\Messages\MailMessage;
 class sendContactNotification extends Notification
 {
     use Queueable;
-
+        protected $request;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($request)
     {
-        //
+        $this->request = $request;
     }
 
     /**
@@ -41,9 +41,10 @@ class sendContactNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->subject($this->request->subject)
+                    ->greeting('Greetings From '. $this->request->name)
+                    ->line($this->request->message)
+                    ->action('Reply', url('mailto:'.$this->request->email));
     }
 
     /**
