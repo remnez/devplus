@@ -62,13 +62,13 @@
       </div>
 
       <div id="intro-carousel" class="owl-carousel" >
-        <div class="item" style="background-image: url({{ asset('img/intro-carousel/1.jpg') }});"></div>
-        <div class="item" style="background-image: url({{ asset('img/intro-carousel/2.jpg') }});">
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/1.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/2.jpg') }});">
           {{-- <h2>We provide<br><span>Digital solutions</span><br>for your business!</h2> --}}
         </div>
-        <div class="item" style="background-image: url({{ asset('img/intro-carousel/3.jpg') }});"></div>
-        <div class="item" style="background-image: url({{ asset('img/intro-carousel/4.jpg') }});"></div>
-        <div class="item" style="background-image: url({{ asset('img/intro-carousel/5.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/3.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/4.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/5.jpg') }});"></div>
       </div>
 
     </section><!-- #intro -->
