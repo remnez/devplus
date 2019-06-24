@@ -15,10 +15,10 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'PagesController@home');
-Route::post('/', 'PagesController@home');
+Route::get('/', 'PagesController@home')->name('pages.home');
+Route::get('contact', 'PagesController@getContact')->name('pages.contact');
+Route::post('/', 'ContactsController@sendEmail')->name('send');
 
-
-// Route::group(['prefix' => 'admin'], function () {
-//     Voyager::routes();
-// });
+Route::group(['prefix' => 'admin-secure'], function () {
+    Voyager::routes();
+});
