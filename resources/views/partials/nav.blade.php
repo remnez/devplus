@@ -4,7 +4,7 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-        <a href="#intro" class="scrollto"><img src="{{ asset('/img/devplus.png') }}" alt="" class="img-fluid"></a>
+        <a href="#intro" class="scrollto"><img src="{{ asset('public/img/devplus.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -62,13 +62,13 @@
       </div>
 
       <div id="intro-carousel" class="owl-carousel" >
-        <div class="item" style="background-image: url({{ asset('/img/intro-carousel/1.jpg') }});"></div>
-        <div class="item" style="background-image: url({{ asset('/img/intro-carousel/2.jpg') }});">
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/1.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/2.jpg') }});">
           {{-- <h2>We provide<br><span>Digital solutions</span><br>for your business!</h2> --}}
         </div>
-        <div class="item" style="background-image: url({{ asset('/img/intro-carousel/3.jpg') }});"></div>
-        <div class="item" style="background-image: url({{ asset('/img/intro-carousel/4.jpg') }});"></div>
-        <div class="item" style="background-image: url({{ asset('/img/intro-carousel/5.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/3.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/4.jpg') }});"></div>
+        <div class="item" style="background-image: url({{ asset('public/img/intro-carousel/5.jpg') }});"></div>
       </div>
 
     </section><!-- #intro -->
