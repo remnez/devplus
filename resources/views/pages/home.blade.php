@@ -184,7 +184,7 @@
               <center><img style="max-height: 200px;" src="storage/{{ $portfolio->app_image}}" class="thumbnail img-fluid" alt=""></center>
               {{-- <img src="{{imageSiteGrabber($portfolio->link)}}" class="thumbnail img-fluid" alt=""> --}}
               <div class="portfolio-info">
-                <h4><a href="#">{{ $portfolio->app_name }}</a></h4>
+                <h4><a href="{{ $portfolio->link}}">{{ $portfolio->app_name }}</a></h4>
                 <p>{{ $portfolio->app_type }}</p>
                 <div>
                   <a href="storage/{{ $portfolio->app_image}}" data-lightbox="portfolio" data-title="{{ $portfolio->app_name}}  - {{ $portfolio->app_description}} - {{ $portfolio->link}}" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
