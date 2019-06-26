@@ -75,7 +75,7 @@
             <p>
               Give us a try today 
             </p>
-            <button class="btn btn-primary" type="submit" title="Send Message">Send Message</button>
+            {{-- <button class="btn btn-primary" type="submit" title="Send Message">Send Message</button> --}}
           </div>
           
         </div>
@@ -302,7 +302,7 @@
                   <textarea required class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
-                {{-- <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div> --}}
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
               </form>
             </div>
           </div>
