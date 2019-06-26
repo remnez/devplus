@@ -10,7 +10,6 @@
     }
   });
 
-
    // Intro background carousel
   $("#intro-carousel").owlCarousel({
     autoplay: true,
@@ -18,6 +17,17 @@
     loop: true,
     animateOut: 'fadeOut',
     items: 1
+  });
+
+  // Initiate the wowjs animation library
+  new WOW().init();
+
+  // Initiate superfish on nav menu
+  $('.nav-menu').superfish({
+    animation: {
+      opacity: 'show'
+    },
+    speed: 400
   });
 
 
