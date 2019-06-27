@@ -9,7 +9,7 @@
           <div class="col-lg-4 col-md-6 footer-info">
             {{-- <img src="img/devplus.png" alt="" class="img-fluid">  --}}
             <h3> {{"<dev/plus>"}} NG</h3>
-            <p>Devplus NG is digital base establishment in which existance is to provide everyday solution(s) originational workflow and simplify your daily business process .</p>
+            <p>Devplus NG is digital based establishment in which existence is to provide everyday solution(s) organizational workflow and simplify your daily business processes.</p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">

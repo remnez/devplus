@@ -9,10 +9,10 @@
 
     <section id="about">
       <div class="container">
-        
+
         <header class="section-header">
           <h3>About Us</h3>
-          <p>DevPlus is a digital solution provider company. We offers services such as Enterprise Database management systems, Web Designs, Mobile Application Developemt, digital marketing amongst others</p>
+          <p>DevPlus is a digital solution provider company. We offers services such as Enterprise Database management systems, Web Designs, Mobile Application Development, digital marketing amongst others</p>
         </header>
 
         <div class="row about-container">

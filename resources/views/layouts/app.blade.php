@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
-  <title>DevPlus - @yield('title')</title>
+  <title>DevPlus - Web Design in Nigeria - @yield('title')</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="DevPlus is a digital solution provider company. We offers services such as Enterprise Database management systems, Web Designs, Mobile Application Developemt, digital marketing amongst others" name="DevPlus - Programming - eCommerce - Laravel - PHP - Codeigniter - Digital-Marketing - Enterprise-Database-System">
   <meta name="google-site-verification" content="OKrEmkcUQvQELassB9wiTUPQToJx4iz-Ig5MVL89W5E" />
