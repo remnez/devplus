@@ -18,7 +18,7 @@ class ContactsController extends Controller
     		'message' => 'required',
     	]);
 
-    	Notification::route('mail', 'test@gmail.com')
+    	Notification::route('mail', 'info@devplus.com.ng')
     					->notify(new sendContactNotification($request));
 
     Session::flash('success', 'The email was sent successfully! We will get in touch with you soonest. Thanks');
