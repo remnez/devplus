@@ -14,7 +14,7 @@ class PagesController extends Controller
     //Home page controller
     public function home(){
 
-    	$portfolios = Portfolio::get();
+    	$portfolios = Portfolio::inRandomOrder()->get();
 
     	return view('pages.home')->with([
     		'portfolios' => $portfolios,]);
